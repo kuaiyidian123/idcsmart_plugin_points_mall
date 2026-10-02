@@ -1,0 +1,4 @@
+<?php
+return [["name" => "积分商城", "url" => "", "fa_icon" => "bx bx-store", "lang" => ["chinese" => "积分商城", "chinese_tw" => "積分商城", "english" => "Points Mall"], "child" => [["name" => "签到中心", "url" => "PointsMall://Index/index", "fa_icon" => "bx bx-calendar", "lang" => ["chinese" => "签到中心", "chinese_tw" => "簽到中心", "english" => "Sign in Center"], "child" => []], ["name" => "积分商城", "url" => "PointsMall://Index/exchange", "fa_icon" => "bx bx-briefcase-alt", "lang" => ["chinese" => "积分商城", "chinese_tw" => "積分商城", "english" => "Redemption of points"], "child" => []], ["name" => "兑换记录", "url" => "PointsMall://Index/record", "fa_icon" => "bx bx-book-open", "lang" => ["chinese" => "兑换记录", "chinese_tw" => "兌換記錄", "english" => "Record"], "child" => []]]]];
+
+?>
