@@ -3,7 +3,7 @@ namespace addons\points_mall;
 
 class PointsMallPlugin extends \app\admin\lib\Plugin
 {
-    public $info = ["name" => "PointsMall", "title" => "积分商城（专业版）", "description" => "积分商城专业版支持签到，登录，购买，续费，邀请注册等任务获得积分，积分兑换，积分兑现等", "status" => 1, "author" => "<a href=\"http://www.yunbuyun.com\">云步云计算</a>", "version" => "1.0.0", "module" => "addons", "lang" => ["chinese" => "积分商城（专业版）", "chinese_tw" => "積分商城（專業版）", "english" => "Points Mall（Speciality）"]];
+    public $info = ["name" => "PointsMall", "title" => "积分商城（专业版）", "description" => "积分商城专业版支持签到，登录，购买，续费，邀请注册等任务获得积分，积分兑换，积分兑现等", "status" => 1, "author" => "陌拜QwQ", "version" => "1.0.0", "module" => "addons", "lang" => ["chinese" => "积分商城（专业版）", "chinese_tw" => "積分商城（專業版）", "english" => "Points Mall（Speciality）"]];
     public function install()
     {
         $fieldsToAddTable1 = [["name" => "id", "type" => "INT AUTO_INCREMENT PRIMARY KEY"], ["name" => "user_id", "type" => "INT NOT NULL"], ["name" => "sign_date", "type" => "DATE NOT NULL"], ["name" => "points", "type" => "INT NOT NULL"], ["name" => "total_points", "type" => "INT NOT NULL"], ["name" => "type", "type" => "INT NOT NULL"], ["name" => "source", "type" => "VARCHAR(255)"], ["name" => "billnumber", "type" => "VARCHAR(255)"], ["name" => "sign_time", "type" => "INT"], ["name" => "note", "type" => "VARCHAR(255)"], ["name" => "registerid", "type" => "VARCHAR(255)"], ["name" => "password", "type" => "VARCHAR(255)"], ["name" => "created_at", "type" => "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"], ["name" => "updated_at", "type" => "TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"]];
